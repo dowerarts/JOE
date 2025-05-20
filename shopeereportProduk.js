@@ -4,24 +4,8 @@ var fetch = require("node-fetch");
 var chalk = require("chalk");
 var moment = require('moment');
 const {
-    log
-} = require("console");
-const delay = require('delay');
-const {
-    get
-} = require("https");
-const {
     table
 } = require('table');
-const FormData = require('form-data');
-const axios = require('axios');
-const qr = require('qrcode-terminal');
-const {
-    decode
-} = require("html-entities");
-const {
-    parse
-} = require("path");
 
 function report(cookie, shopid, itemid, description) {
     const index = fetch('https://shopee.co.id/api/v4/listing_qc/item_report/report_item', {
